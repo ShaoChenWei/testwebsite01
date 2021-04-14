@@ -1,0 +1,429 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+*{box-sizing: border-box;}
+
+body{ 
+	margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif; 	
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: bold;
+}
+
+p{
+word-break: break-all; 
+word-wrap: break-word;}
+
+
+/*navbar*/
+
+.nav-link{
+  color:white;
+  transition: 0.5s; align-items: center;
+}
+
+.top-nav-collapse{
+	background-color: #272730;
+}
+
+.nav-item .navbar-collapse{
+	vertical-align:middle; display: inline-block;
+}
+
+#sticky-nav .nav-item{
+	text-align: center;
+}
+
+.nav-brand{position: fixed; float: left;}
+/*fist page*/
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+.hearder.jumbotron{
+	background-image: url( ../images/archi/Spangenberg_Turm_in_Bochum-2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	height: 900px; margin: 0;
+	color: #060607;
+}
+
+.container1{
+	padding-top:500px; 
+	padding-left:10px; 
+	margin: 0
+}
+
+.container1 h1 h3 {
+	color: #060607;
+}
+
+hr{
+	width:30%; 
+	padding-left:0; 
+	margin-left: 0;
+}
+
+/*second page*/
+
+.about{
+	padding-top: 130px; 
+	padding-bottom: 150px;
+}
+.flex-container {
+	display: flex;
+    flex-wrap:wrap;
+    flex-basis: 300px; 
+    justify-content: center;
+    align-items: center;
+    padding: 80px 200px;
+}
+
+.about-content{
+	padding-right: 60px;
+}
+
+.about-pic img{ 
+	width:100; 
+	border-radius: 10%;
+}
+
+/*third page*/
+
+
+
+.container .news-picgrounp{	
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;	
+}
+
+.services{ 
+	background-color:#54545E ; 
+	color:aliceblue; 
+	margin: 0px; 
+	padding-top: 180px;  
+}
+
+h1.current_title{
+	font-size: 4vw; 
+	padding-bottom:10px; 
+	text-align: center; 
+	padding-top:80px;
+}
+
+h4{
+	padding: 10px;
+}
+
+.news-pic{
+	padding:20px;
+}
+
+/*fourth page*//*Introduce*/
+
+.intro{
+	padding-top:180px;
+}
+.col-person img{
+	width: 300px; 
+	height: 300px; 
+	padding: 70px 50px 20px 50px;
+	margin: 0; 
+}
+
+.content-section-heading{ 
+	font-size: 36px; 
+	margin-top: 0px;
+}
+
+.section-subheading {
+	font-size: 16px; 
+}
+/*<!--.col-person {width: 100%; padding-left: 30px; padding-right: 30px; margin-bottom: 0; padding-bottom: 0px;}-->*/
+
+.col-description {
+	margin: 0;
+	position: absolute; 
+	top: -30px;
+}
+.intro-person {
+	padding-right:30px; 
+	padding-top:0; 
+	margin-top: 0; 
+	text-align: center; 
+}
+
+
+/projects*/
+
+.content-section{
+	padding-top:100px;
+}
+.portfolio-item{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	max-width:530px;
+	margin:auto auto 1rem
+}
+
+.portfolio-item .caption{
+	display:flex;
+	height:100%;
+	width:100%;
+	background-color:rgba(33,37,41,.2);
+	position:absolute;
+	top:0;
+	bottom:0;
+	z-index:1
+}
+
+.portfolio-item .caption .caption-content{
+	color:#fff;
+	margin:auto 2rem 2rem
+}
+
+.portfolio-item .caption .caption-content h2{
+	font-size:.8rem;
+	text-transform:uppercase
+}
+
+.portfolio-item .caption .caption-content p{
+	font-weight:300;
+	font-size:1.2rem;
+}
+
+@media (min-width:992px){
+	.portfolio-item{
+		max-width:none;
+		margin:0
+	}
+}
+	.portfolio-item .caption{
+		transition:background-color .12s,-webkit-clip-path .40s ease-out;
+		transition:clip-path .40s ease-out,background-color .12s;
+		transition:clip-path .40s ease-out,background-color .12s,-webkit-clip-path .40s ease-out;-webkit-clip-path:inset(0);
+		clip-path:inset(0)
+	}
+	
+	.portfolio-item .caption .caption-content{
+		transition:opacity .25s;
+		margin-left:5rem;
+		margin-right:5rem;
+		margin-bottom:5rem
+	}
+	
+	.portfolio-item img{
+		transition:-webkit-clip-path .25s ease-out;
+		transition:clip-path .25s ease-out;
+		transition:clip-path .25s ease-out,-webkit-clip-path .25s ease-out;
+		-webkit-clip-path:inset(-1px);
+		clip-path:inset(-1px)}
+	
+	.portfolio-item:hover img{
+		-webkit-clip-path:inset(2rem);
+		clip-path:inset(2rem)
+	}
+
+/*<!--footer	-->*/
+	
+.footer{
+	    color:#EEEDFF; 
+	    background-color: #272730; 
+	    margin: auto; 
+	    padding:50px;
+	}
+	
+ul{
+	list-style: none; 
+	margin: 0; 
+	padding: 18px; 
+	line-height: 40px;}
+
+
+.fab{
+	margin: 20px; 
+	}
+	
+.footer-h4{
+	font-size: 18px; 
+	color: #CEA716; 
+	font: oblique; 
+	text-transform: uppercase;
+	position: relative; 
+	padding-left: 18px;
+	}
+	
+.footer-link{
+	color: #FFEFCA;
+	}
+
+	@media only screen and (max-width: 992px){
+		footer{
+			color: #EEEDFF;
+			background-color: #272730;
+			margin: auto;
+			padding:50px;
+	}	}
+
+/*<!--Kotactformular-->*/
+.formbackground{ 
+	background-size: auto;
+	background-image: url("../images/mountains-6118182_1920.jpg"); 
+	background-repeat:round;
+	
+}
+
+	
+	.contactus{
+		display: flex;
+        flex-wrap: wrap;
+		max-width: 1000px;
+		margin: 50px auto;
+		position: relative;
+		box-shadow: 0 10px 30px 0px rgba(0,0,0,0.1);
+		padding: 300px auto auto auto;
+	}	
+	
+	
+	
+	.contactus .contact-title{
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 3px;
+		font-size: 3em;
+		line-height: 48px;
+		padding-bottom: 20px;
+		color: #5543ca;
+		background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	
+	input{background-color: beige;}
+	
+	.contact-form .form-field{
+		position: relative;
+		margin: 32px 0;
+	}
+	
+	.contact-form .input-text{
+		display: block;
+		width: 100%;
+		height: 36px;
+		border-width: 0 0 2px 0;
+		border-color: #5543ca;
+		font-size: 18px;
+		line-height: 26px;
+		font-weight: 400;
+		
+	}
+	
+	.contact-form .input-text:focus{
+		outline: none;
+	}
+
+	.contact-form .label{
+		position: absolute;
+		left: 20px;
+		bottom: 11px;
+		font-size: 18px;
+		line-height: 26px;
+		font-weight: 400;
+		color: #5543ca;
+		cursor: text;
+		text-transform: capitalizel;
+		transition: transform 0.2s ease-in-out;
+		
+	}
+	
+	.contact-form .submit-btn{
+		display: inline-block;
+		background-image: linear-gradient(125deg, #a72879, #064497);
+		color: #fff; 
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 16px;
+		padding: 8px 17px;
+		border: none;
+		width: 200px;
+		cursor: pointer;
+	}
+	
+	.contact-details{ margin-top:50px;  padding: 50px; text-align: center;  }
+
+
+
+.input1 {
+	vertical-align: top;
+	}
+
+.contact-details{
+	padding:20px; 
+	margin: 30px; 
+	background-color: aliceblue; 
+	border:dotted;
+	}
+
+/*datenschutz*/
+	
+.btn-daten{
+	     background-color: dodgerblue;
+	       border: none;
+	       color: #fff;
+	       padding: 12px 30px;
+	       cursor: pointer;
+	       font-size: 20px;
+	}
+	
+	.btn:hover{
+		background-color: royalblue;
+	}
+
+/*<!--
+.buildingkey1{ width:400px; height: 400px; bottom:0; right: 0; top:210px; positon:absolute; background-image: url("../images/archi/buildingkey1.png"); background-size:contain; background-repeat: no-repeat;}	 
+
+.buildingkey2{ width:440px; height: 400px; bottom:0; right: 0; top:210px; positon:absolute; background-image: url("../images/archi/buildingkey2.png"); background-size:contain; background-repeat: no-repeat;}	-->*/
+/*.col-sm-4{height: 300px;}
+.col-sm-12{float: left;}
+.col-6.inneractuel{padding:0; margin: 0; }
+.col-6.ausseractuel{padding-top:100px; padding-left:10px;}
+
+.col-sm-5{background-image: url( "../images/lanyu_bike2.jpg");
+height: 500px; background-repeat: no-repeat; background-size: 100%; 
+
+}
+.section_attractions h2{margin-top: 180px;padding:0 20px;} 
+
+.section{padding:50px 0;}
+
+.section-maps{background-color:black; color:white;}
+.section-maps h1{padding:15px}*/
+
+/*
+footer.jumbotron{
+	color:#fff;
+   background-color: #222222;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	height: 400px; margin: 0;
+}
+
+.form-control{background-color: transparent; max-width: 550px;}*/
